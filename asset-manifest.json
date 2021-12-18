@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/littleapple/static/css/main.e1c1d29d.chunk.css",
+    "main.js": "/littleapple/static/js/main.bfc738ca.chunk.js",
+    "main.js.map": "/littleapple/static/js/main.bfc738ca.chunk.js.map",
+    "runtime-main.js": "/littleapple/static/js/runtime-main.2410221f.js",
+    "runtime-main.js.map": "/littleapple/static/js/runtime-main.2410221f.js.map",
+    "static/js/2.778c14cc.chunk.js": "/littleapple/static/js/2.778c14cc.chunk.js",
+    "static/js/2.778c14cc.chunk.js.map": "/littleapple/static/js/2.778c14cc.chunk.js.map",
+    "static/js/3.b5646e4c.chunk.js": "/littleapple/static/js/3.b5646e4c.chunk.js",
+    "static/js/3.b5646e4c.chunk.js.map": "/littleapple/static/js/3.b5646e4c.chunk.js.map",
+    "index.html": "/littleapple/index.html",
+    "static/css/main.e1c1d29d.chunk.css.map": "/littleapple/static/css/main.e1c1d29d.chunk.css.map",
+    "static/js/2.778c14cc.chunk.js.LICENSE.txt": "/littleapple/static/js/2.778c14cc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2410221f.js",
+    "static/js/2.778c14cc.chunk.js",
+    "static/css/main.e1c1d29d.chunk.css",
+    "static/js/main.bfc738ca.chunk.js"
+  ]
+}
