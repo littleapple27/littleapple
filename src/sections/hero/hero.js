@@ -101,7 +101,7 @@ let Hero = () => {
                                             />
                                         </a>
                                         <div className="-mr-2 flex items-center md:hidden">
-                                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lime-500">
                                                 <span className="sr-only">Open main menu</span>
                                                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
                                             </Popover.Button>
@@ -114,7 +114,7 @@ let Hero = () => {
                                             {item.name}
                                         </a>
                                     ))}
-                                    <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                                    <a href="#" className="font-medium text-lime-600 hover:text-lime-500">
                                         Log in
                                     </a>
                                 </div>
@@ -144,7 +144,7 @@ let Hero = () => {
                                             />
                                         </div>
                                         <div className="-mr-2">
-                                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lime-500">
                                                 <span className="sr-only">Close main menu</span>
                                                 <XIcon className="h-6 w-6" aria-hidden="true" />
                                             </Popover.Button>
@@ -171,22 +171,21 @@ let Hero = () => {
                             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                                 <span className="block">Hello, I'm Andrea.</span>
                             </h1>
-                            <h3 className="text-2xl block text-indigo-600">I am <span class="typewrite" data-period="2000" data-type='[ "a React Developer.", "a Front End Engineer.", "always evolving.", "many things." ]'></span>
-                                <span class="wrap"></span></h3>
+                            <h3 className="text-2xl block text-lime-600">I am <span className="typewrite" data-period="2000" data-type='[ "a React Developer.", "a Front End Engineer.", "always evolving.", "many things." ]'></span>
+                                <span className="wrap"></span></h3>
 
 
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                                fugiat veniam occaecat fugiat aliqua.
+                                Front End Engineer with entrepreneurial disposition who pairs capabilities in front end development with strong marketing, advertising, business, and client relations background. Areas of special interest and proficiency include UI/UX, usability, React, Redux, Tailwind/Bootstrap, JavaScript, e2e testing with Cypress. Perceptive and highly adaptable to new concepts and technologies in the web development ecosystem.
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div className="rounded-md shadow">
-                                    <Button href={'#'} itemLabel={'Learn more'} />
+                                    <Button href={'#'} itemLabel={'Learn more'} color={'lime'} />
                                 </div>
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
                                     <a
                                         href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-lime-700 bg-lime-100 hover:bg-lime-200 md:py-4 md:text-lg md:px-10"
                                     >
                                         Get in touch
                                     </a>
@@ -199,7 +198,7 @@ let Hero = () => {
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <img
                     className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+                    src="images/heroImage.jpg"
                     alt=""
                 />
             </div>
