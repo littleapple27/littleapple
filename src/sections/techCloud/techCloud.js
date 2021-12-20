@@ -1,29 +1,29 @@
-/* This example requires Tailwind CSS v2.0+ */
+import FaIcon from "../../components/faIcon";
 let TechCloud = () => {
+    const iconStack = [
+        { icon: 'react', brand: true },
+        { icon: 'html5', brand: true },
+        { icon: 'css3', brand: true },
+        { icon: 'bootstrap', brand: true },
+        { icon: 'sass', brand: true },
+        { icon: 'js-square', brand: true },
+        { icon: 'angular', brand: true },
+        { icon: 'node-js', brand: true },
+        { icon: 'npm', brand: true },
+        { icon: 'php', brand: true },
+        { icon: 'git-alt', brand: true },
+        { icon: 'github', brand: true },
+    ]
     return (
-        <div className="bg-indigo-200 bg-opacity-25">
-            <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-                <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-                    <h2 className="max-w-md mx-auto text-3xl font-extrabold text-indigo-900 text-center lg:max-w-xl lg:text-left">
-                        Technical Profile
-                    </h2>
-                    <div className="flow-root self-center mt-8 lg:mt-0">
-                        <div className="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-                            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                                <img
-                                    className="h-12"
-                                    src="https://tailwindui.com/img/logos/workcation-logo-indigo-900.svg"
-                                    alt="Workcation"
-                                />
-                            </div>
-                            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                                <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-indigo-900.svg" alt="Tuple" />
-                            </div>
-                            <div className="mt-4 ml-8 flex flex-grow flex-shrink-0 justify-center lg:flex-grow-0 lg:ml-4">
-                                <img className="h-12" src="https://tailwindui.com/img/logos/level-logo-indigo-900.svg" alt="Level" />
-                            </div>
-                        </div>
-                    </div>
+        <div className="bg-gray-100">
+            <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
+                    Technical Profile
+                </p>
+                <div className="mt-6 flex flex-wrap justify-evenly">
+                    {iconStack.map((item) => (
+                        < FaIcon key={item.icon} size={'4x'} color={'gray-500'} brand={item.brand} icon={item.icon} />
+                    ))}
                 </div>
             </div>
         </div>

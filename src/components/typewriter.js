@@ -7,8 +7,7 @@ let Typewriter = (props) => {
 
     console.log(props)
 
-
-    useEffect(() => {   //Typewriter effect
+    let typewriter = () => {
         var TxtType = function (el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
@@ -65,11 +64,17 @@ let Typewriter = (props) => {
             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
             document.body.appendChild(css);
         };
+    }
+
+
+
+    useEffect(() => {   //Typewriter effect
+        typewriter();
     })
 
 
     return (
-        <C className="text-2xl block text-lime-600">{leadingText}<span className="typewrite" data-period={dataPeriod} data-type={typedText}></span>
+        <C className="block text-4xl text-indigo-200">{leadingText}<span className="typewrite" data-period={dataPeriod} data-type={typedText}></span>
             <span className="wrap"></span>{followingText}</C>
     )
 }

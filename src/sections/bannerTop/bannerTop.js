@@ -1,12 +1,13 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { SpeakerphoneIcon } from '@heroicons/react/outline'
+import { SpeakerphoneIcon } from '@heroicons/react/outline';
+import HorizontalGradient from '../../components/horizontalGradient';
+
+
+
 let BannerTop = () => {
     return (
         <>
-            <div className="bg-gradient-to-r from-emerald-500 to-lime-600">
-                <div className="max-w-7xl mx-auto py-1 sm:py-1">
-                </div>
-            </div>
+            <HorizontalGradient />
             <div className="border-bottom">
                 <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8 shadow-sm">
                     <div className="flex items-center justify-between flex-wrap">
@@ -22,6 +23,7 @@ let BannerTop = () => {
                     </div>
                 </div>
             </div>
+            <HorizontalGradient />
         </>
     )
 }
