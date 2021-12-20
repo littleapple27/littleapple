@@ -1,4 +1,4 @@
-import FaIcon from "../../components/faIcon";
+import Icon from "../../components/icon";
 let TechCloud = () => {
     const iconStack = [
         { icon: 'react', brand: true },
@@ -20,9 +20,9 @@ let TechCloud = () => {
                 <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
                     Technical Profile
                 </p>
-                <div className="mt-6 flex flex-wrap justify-evenly">
+                <div className="mt-6 flex flex-wrap justify-evenly space-y-5">
                     {iconStack.map((item) => (
-                        < FaIcon key={item.icon} size={'4x'} color={'gray-500'} brand={item.brand} icon={item.icon} />
+                        <Icon key={item.icon} size={'4x'} color={'gray-500'} brand={item.brand} icon={item.icon} />
                     ))}
                 </div>
             </div>

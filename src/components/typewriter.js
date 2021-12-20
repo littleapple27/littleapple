@@ -74,7 +74,7 @@ let Typewriter = (props) => {
 
 
     return (
-        <C className="block text-4xl text-indigo-200">{leadingText}<span className="typewrite" data-period={dataPeriod} data-type={typedText}></span>
+        <C className="block text-2xl sm:text-4xl text-indigo-200">{leadingText}<span className="typewrite" data-period={dataPeriod} data-type={typedText}></span>
             <span className="wrap"></span>{followingText}</C>
     )
 }

@@ -695,11 +695,14 @@ video {
 .hidden {
 	display: none;
 }
-.h-6 {
-	height: 1.5rem;
+.h-4 {
+	height: 1rem;
 }
 .h-56 {
 	height: 14rem;
+}
+.h-6 {
+	height: 1.5rem;
 }
 .h-full {
 	height: 100%;
@@ -724,6 +727,9 @@ video {
 }
 .w-0 {
 	width: 0px;
+}
+.w-4 {
+	width: 1rem;
 }
 .w-6 {
 	width: 1.5rem;
@@ -827,6 +833,11 @@ video {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(0.25rem * var(--tw-space-x-reverse));
 	margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
 	overflow: hidden;
@@ -998,9 +1009,9 @@ video {
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
-.text-4xl {
-	font-size: 2.25rem;
-	line-height: 2.5rem;
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 .text-3xl {
 	font-size: 1.875rem;
@@ -1014,9 +1025,9 @@ video {
 	font-size: 0.875rem;
 	line-height: 1.25rem;
 }
-.text-2xl {
-	font-size: 1.5rem;
-	line-height: 2rem;
+.text-4xl {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
 }
 .text-xl {
 	font-size: 1.25rem;
@@ -1047,10 +1058,6 @@ video {
 .text-indigo-200 {
 	--tw-text-opacity: 1;
 	color: rgba(199, 210, 254, var(--tw-text-opacity));
-}
-.text-black {
-	--tw-text-opacity: 1;
-	color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 .text-gray-500 {
 	--tw-text-opacity: 1;

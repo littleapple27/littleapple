@@ -1,6 +1,6 @@
 import React from 'react';
 
-let FaIcon = (props) => {
+let Icon = (props) => {
     let { icon, size, color, brand } = props;
 
     let type;
@@ -12,4 +12,4 @@ let FaIcon = (props) => {
     )
 }
 
-export default FaIcon;
+export default Icon;

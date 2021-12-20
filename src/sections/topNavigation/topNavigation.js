@@ -22,7 +22,7 @@ let TopNavigation = () => {
     }
     return (
 
-        <div className="relative z-10 pb-8 bg-white sm:pb-8 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-14 xl:pb-16">                 <svg
+        <div className="relative mx-auto pb-8 bg-white sm:pb-8 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-14 xl:pb-16">                 <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
             viewBox="0 0 100 100"
