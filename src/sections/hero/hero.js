@@ -3,6 +3,8 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Button from '../../components/button.js'
+import Typewriter from '../../components/typewriter.js'
+import heroImage from '../../images/heroImage.jpg'
 
 const navigation = [
     { name: 'About', href: '#' },
@@ -12,66 +14,63 @@ const navigation = [
     { name: 'Contact', href: '#' }
 ]
 let Hero = () => {
-    //Typewriter effect
-
-
-
-    var TxtType = function (el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function () {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
+    /*     //Typewriter effect
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
             this.isDeleting = false;
-            this.loopNum++;
-            delta = 500;
-        }
-
-        setTimeout(function () {
-            that.tick();
-        }, delta);
-    };
-
-    window.onload = function () {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i = 0; i < elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-                new TxtType(elements[i], JSON.parse(toRotate), period);
+        };
+    
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+    
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
             }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
+    
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+    
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+    
+            if (this.isDeleting) { delta /= 2; }
+    
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+    
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+    
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        }; */
 
 
     return (
@@ -97,7 +96,7 @@ let Hero = () => {
                                             <span className="sr-only">Workflow</span>
                                             <img
                                                 className="h-8 w-auto sm:h-10"
-                                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                                src="images/logo.png"
                                             />
                                         </a>
                                         <div className="-mr-2 flex items-center md:hidden">
@@ -171,15 +170,14 @@ let Hero = () => {
                             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                                 <span className="block">Hello, I'm Andrea.</span>
                             </h1>
-                            <h3 className="text-2xl block text-lime-600">I am <span className="typewrite" data-period="2000" data-type='[ "a React Developer.", "a Front End Engineer.", "always evolving.", "many things." ]'></span>
-                                <span className="wrap"></span></h3>
-
-
+                            <Typewriter htmlType={'h3'} leadingText={'I am '} typedText={'[ "a React Developer.", "a Front End Engineer.", "always evolving.", "many things." ]'} />
+                            {/* <h3 className="text-2xl block text-lime-600">I am <span className="typewrite" data-period="2000" data-type='[ "a React Developer.", "a Front End Engineer.", "always evolving.", "many things." ]'></span>
+                                <span className="wrap"></span></h3> */}
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                                 Front End Engineer with entrepreneurial disposition who pairs capabilities in front end development with strong marketing, advertising, business, and client relations background. Areas of special interest and proficiency include UI/UX, usability, React, Redux, Tailwind/Bootstrap, JavaScript, e2e testing with Cypress. Perceptive and highly adaptable to new concepts and technologies in the web development ecosystem.
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <div className="rounded-md shadow">
+                                <div className="rounded-full shadow">
                                     <Button href={'#'} itemLabel={'Learn more'} color={'lime'} />
                                 </div>
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -198,7 +196,7 @@ let Hero = () => {
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <img
                     className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src="images/heroImage.jpg"
+                    src={heroImage}
                     alt=""
                 />
             </div>

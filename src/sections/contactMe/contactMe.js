@@ -1,19 +1,4 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import contactImage from '../../images/contactImage.jpg'
 let ContactMe = () => {
     return (
         <div className="relative bg-white">
@@ -21,7 +6,7 @@ let ContactMe = () => {
                 <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                     <img
                         className="h-56 w-full object-cover lg:absolute lg:h-full"
-                        src="images/contactImage.jpg"
+                        src={contactImage}
                         alt=""
                     />
                 </div>

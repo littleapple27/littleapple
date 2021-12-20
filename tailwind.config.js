@@ -9,7 +9,9 @@ module.exports = {
     extend: {
       colors: {
         // Build your palette here
-        lime: colors.lime
+        lime: colors.lime,
+        trueGray: colors.trueGray,
+        emerald: colors.emerald
       }
     }
   },

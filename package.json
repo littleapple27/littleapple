@@ -1,9 +1,10 @@
 {
-  "name": "cra-tailwind-jit",
+  "name": "littleapple",
   "homepage": "https://littleapple27.github.io/littleapple/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@testing-library/jest-dom": "^5.14.1",
@@ -50,5 +51,9 @@
     "concurrently": "^6.2.0",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.4"
-  }
+  },
+  "description": "express server",
+  "main": "server.js",
+  "author": "Andrea Legleiter",
+  "license": "ISC"
 }
