@@ -10,7 +10,7 @@ import logo from '../../images/logo.png'
 
 let TopNavigation = () => {
     const navigation = [
-        { name: 'About', href: '#' },
+        { name: 'Technical Profile', href: '#' },
         { name: 'Resume', href: '#' },
         { name: 'Research', href: '#' },
         { name: 'Portfolio', href: '#' },
@@ -22,7 +22,7 @@ let TopNavigation = () => {
     }
     return (
 
-        <div className="relative mx-auto pb-8 bg-white sm:pb-8 md:pb-10 lg:max-w-2xl lg:w-full lg:pb-14 xl:pb-16">                 <svg
+        <div className="relative mx-auto pb-4 bg-white sm:pb-6 lg:max-w-2xl lg:w-full lg:pb-8 xl:pb-10">                 <svg
             className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
             fill="currentColor"
             viewBox="0 0 100 100"
@@ -33,7 +33,7 @@ let TopNavigation = () => {
         </svg>
 
             <Popover>
-                <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+                <div className="relative pt-4 px-4 sm:px-6 lg:px-8">
                     <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                         <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                             <div className="flex items-center justify-between w-full md:w-auto">
@@ -42,6 +42,7 @@ let TopNavigation = () => {
                                     <img
                                         className="h-8 w-auto sm:h-10"
                                         src={logo}
+                                        alt="Little Apple Logo"
                                     />
                                 </a>
                                 <div className="-mr-2 flex items-center md:hidden">
@@ -80,8 +81,8 @@ let TopNavigation = () => {
                                 <div>
                                     <img
                                         className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                                        alt=""
+                                        src={logo}
+                                        alt="Little Apple Logo"
                                     />
                                 </div>
                                 <div className="-mr-2">

@@ -209,7 +209,6 @@ import heroImage from '../../images/heroImage.jpg';
 import Typewriter from '../../components/typewriter.js';
 import TopNavigation from '../topNavigation/topNavigation';
 
-
 let Hero = () => {
     return (
         <div className="bg-white">

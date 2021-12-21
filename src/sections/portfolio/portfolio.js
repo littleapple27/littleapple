@@ -1,58 +1,105 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Icon from "../../components/icon";
+import flatIconsBlog from "../../images/flatIconsBlog.png";
+import iconMatchBlog from "../../images/iconMatchBlog.png";
+import aloftBlog from "../../images/aloftBlog.png";
 const posts = [
     {
-        title: 'Boost your conversion rate',
-        href: '#',
-        category: { name: 'Article', href: '#' },
+        title: 'Flat-Design Icon Sets: a Case for Universal Meaning',
+        subtitle: '2020 International Conference on Applied Human Factors and Ergonomics | Advances in Usability and User Experience',
+        href: 'https://www.researchgate.net/publication/339004734_Flat-Design_Icon_Sets_a_Case_for_Universal_Meanings',
+        category: { name: 'Usability & User Experience', href: '#' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
-        date: 'Mar 16, 2020',
+            'In this paper, we focus on open-source typographic icon sets for the web (e.g., Font Awesome). Specifically, we investigate to what extent flat-design icons have acquired a universal meaning and we analyze human factors and design aspects that play a key role in icon recognition.',
+        date: 'Jul 18, 2020',
         datetime: '2020-03-16',
-        imageUrl:
-            'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+        imageUrl: flatIconsBlog,
         readingTime: '6 min',
         author: {
-            name: 'Roel Aufderehar',
-            href: '#',
-            imageUrl:
-                'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            name: 'Andrea M. Legleiter & Nicholas Caporusso',
+            href: '#'
         },
+        icons: [
+            {
+                icon: 'researchgate',
+                brand: true,
+                linkTo: 'https://www.researchgate.net/publication/339004734_Flat-Design_Icon_Sets_a_Case_for_Universal_Meanings',
+                target: '_blank'
+            },
+            {
+                icon: 'github',
+                brand: true,
+                linkTo: 'https://github.com/littleapple27/case-for-universal-meanings',
+                target: '_blank'
+            },
+            {
+                icon: 'youtube',
+                brand: true,
+                linkTo: "https://www.youtube.com/embed/sjWAdWMPcPM?rel=0&autoplay=1",
+                dataRel: "lightcase"
+            }
+        ]
     },
     {
-        title: 'How to use search engine optimization to drive sales',
-        href: '#',
-        category: { name: 'Video', href: '#' },
+        title: 'How well do you know your Font Awesome Icons?',
+        subtitle: 'Acknowledged & Promoted by Dave Gandy, Founder of Font Awesome',
+        href: 'https://littleapple27.dev/icon-match-game/index.php',
+        category: { name: 'Usability & User Experience', href: '#' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
-        date: 'Mar 10, 2020',
-        datetime: '2020-03-10',
-        imageUrl:
-            'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+            'In our prelimiary study, we found significant differences between the symbols in the same set in terms of ambiguity, which we are currently exploring more extensively in a follow-up study. Participate by playing a fun, interactive game!',
+        imageUrl: iconMatchBlog,
+        date: 'Mar 18, 2020',
+        datetime: '2020-03-16',
         readingTime: '4 min',
         author: {
-            name: 'Brenna Goyette',
-            href: '#',
+            name: 'Play Now',
+            href: 'https://littleapple27.dev/icon-match-game/index.php',
             imageUrl:
                 'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
+        icons: [
+            {
+                icon: 'gamepad',
+                linkTo: 'https://littleapple27.dev/icon-match-game/index.php',
+                target: '_blank'
+            },
+            {
+                icon: 'twitter',
+                brand: true,
+                linkTo: 'https://twitter.com/fontawesome/status/1255516741255467016?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1255516741255467016%7Ctwgr%5E%7Ctwcon%5Es1_c10&ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Ffontawesome2Fstatus2F1255516741255467016widget%3DTweet',
+                target: '_blank'
+            }
+        ]
     },
     {
-        title: 'Improve your customer experience',
-        href: '#',
-        category: { name: 'Case Study', href: '#' },
+        title: 'GoAloft: A Resource for Sailors',
+        href: 'https://littleapple27.github.io/aloft/dock.html',
+        category: { name: 'Progressive Web Application', href: 'https://littleapple27.github.io/aloft/dock.html' },
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.',
-        date: 'Feb 12, 2020',
-        datetime: '2020-02-12',
-        imageUrl:
-            'https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-        readingTime: '11 min',
-        author: {
-            name: 'Daniela Metz',
-            href: '#',
-            imageUrl:
-                'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
+            'I completed development of this PWA to meet the project requirements for Mobile Development I course during my graduate studies.  You can view the code repository and readMe at GitHub.',
+        date: 'Fall 2019',
+        imageUrl: aloftBlog,
+        icons: [
+            {
+                icon: 'html5',
+                brand: true,
+            },
+            {
+                icon: 'css3',
+                brand: true,
+            },
+            {
+                icon: 'sass',
+                brand: true,
+            },
+            {
+                icon: 'js-square',
+                brand: true,
+            },
+            {
+                icon: 'bootstrap',
+                brand: true,
+            }
+        ]
     },
 ]
 
@@ -64,9 +111,9 @@ let Portfolio = () => {
             </div>
             <div className="relative max-w-7xl mx-auto">
                 <div className="text-center">
-                    <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">From the blog</h2>
+                    <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Portfolio</h2>
                     <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+                        A sampling of my work over the years.
                     </p>
                 </div>
                 <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
@@ -78,32 +125,32 @@ let Portfolio = () => {
                             <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                                 <div className="flex-1">
                                     <p className="text-sm font-medium text-indigo-600">
-                                        <a href={post.category.href} className="hover:underline">
+                                        <a href={post.category.href} className="hover:underline uppercase">
                                             {post.category.name}
                                         </a>
                                     </p>
                                     <a href={post.href} className="block mt-2">
-                                        <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                                        <p className="text-xl font-semibold text-gray-900 mb-3">{post.title}</p>
+                                        <p className="text-sm font-light text-gray-500">{post.subtitle}</p>
                                         <p className="mt-3 text-base text-gray-500">{post.description}</p>
                                     </a>
                                 </div>
                                 <div className="mt-6 flex items-center">
-                                    <div className="flex-shrink-0">
-                                        <a href={post.author.href}>
-                                            <span className="sr-only">{post.author.name}</span>
-                                            <img className="h-10 w-10 rounded-full" src={post.author.imageUrl} alt="" />
-                                        </a>
+                                    <div className="flex">
+                                        {post?.icons?.map((icon) => (
+                                            <Icon key={icon?.icon} size={'lg'} {...icon} classNames={'text-indigo-500 hover:text-indigo-700'} />
+                                        ))}
                                     </div>
                                     <div className="ml-3">
                                         <p className="text-sm font-medium text-gray-900">
-                                            <a href={post.author.href} className="hover:underline">
-                                                {post.author.name}
+                                            <a href={post?.author?.href} className="hover:underline">
+                                                {post?.author?.name}
                                             </a>
                                         </p>
                                         <div className="flex space-x-1 text-sm text-gray-500">
-                                            <time dateTime={post.datetime}>{post.date}</time>
+                                            <time dateTime={post?.datetime}>{post?.date}</time>
                                             <span aria-hidden="true">&middot;</span>
-                                            <span>{post.readingTime} read</span>
+                                            <span>{post?.readingTime} read</span>
                                         </div>
                                     </div>
                                 </div>

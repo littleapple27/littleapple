@@ -14,7 +14,7 @@ let BannerTop = () => {
                             <SpeakerphoneIcon className="h-4 w-4 text-white" aria-hidden="true" />
                         </span>
                         <p className="ml-3 font-medium text-white truncate">
-                            <span className="md:hidden">Now Seeking Opportunities?  Contact me today!</span>
+                            <span className="md:hidden">#opentowork Contact me today!</span>
                             <span className="hidden md:inline">Now seeking opportunities in web & mobile application development! Interested?  Contact me today!</span>
                         </p>
                     </div>
