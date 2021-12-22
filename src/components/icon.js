@@ -16,7 +16,7 @@ let Icon = (props) => {
     }
 
     return (
-        <div className="col-span-1 flex justify-center">
+        <div className="col-span-1 flex justify-center mr-3">
             {ret}
         </div>
     )

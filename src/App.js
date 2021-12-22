@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import BannerTop from './sections/bannerTop/bannerTop.js';
 import SocialMedia from './sections/socialMedia/socialMedia.js';
 import Hero from './sections/hero/hero.js'
-import Portfolio from './sections/portfolio/portfolio.js';
+import Research from './sections/portfolio/research.js';
 import Projects from './sections/portfolio/projects.js';
 import TechCloud from './sections/techCloud/techCloud.js';
 import ContactMe from './sections/contactMe/contactMe.js';
@@ -19,7 +19,7 @@ let App = () => {
       <BannerTop />
       <Hero />
       <TechCloud />
-      <Portfolio />
+      <Research />
       <Projects />
       <SocialMedia />
       <ContactMe />

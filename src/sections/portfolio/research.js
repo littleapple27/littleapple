@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Icon from "../../components/icon";
 import flatIconsBlog from "../../images/flatIconsBlog.png";
 import iconMatchBlog from "../../images/iconMatchBlog.png";
@@ -7,7 +8,7 @@ const posts = [
         title: 'Flat-Design Icon Sets: a Case for Universal Meaning',
         subtitle: '2020 International Conference on Applied Human Factors and Ergonomics | Advances in Usability and User Experience',
         href: 'https://www.researchgate.net/publication/339004734_Flat-Design_Icon_Sets_a_Case_for_Universal_Meanings',
-        category: { name: 'Usability & User Experience', href: '#' },
+        category: { name: 'Usability & User Experience', href: 'https://www.researchgate.net/publication/339004734_Flat-Design_Icon_Sets_a_Case_for_Universal_Meanings' },
         description:
             'In this paper, we focus on open-source typographic icon sets for the web (e.g., Font Awesome). Specifically, we investigate to what extent flat-design icons have acquired a universal meaning and we analyze human factors and design aspects that play a key role in icon recognition.',
         date: 'Jul 18, 2020',
@@ -47,8 +48,6 @@ const posts = [
         author: {
             name: 'Play Now',
             href: 'https://littleapple27.dev/icon-match-game/index.php',
-            imageUrl:
-                'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
         },
         icons: [
             {
@@ -66,14 +65,14 @@ const posts = [
     },
     {
         title: '2020 International Conference on Applied Human Factors and Ergonomics',
-        href: 'https://littleapple27.github.io/aloft/dock.html',
-        category: { name: 'Conference Presentation', href: 'https://littleapple27.github.io/aloft/dock.html' },
+        href: 'https://www.youtube.com/embed/sjWAdWMPcPM?rel=0&autoplay=1',
+        category: { name: 'Conference Presentation', href: 'https://www.youtube.com/embed/sjWAdWMPcPM?rel=0&autoplay=1' },
         description:
-            'Presnted at the Virtual meeting of the 2020 International Conference on Applied Human Factors and Ergonomics',
+            'Presented at the Virtual meeting of the 2020 International Conference on Applied Human Factors and Ergonomics.',
         date: 'July 2020',
         datetime: '2020-07-18',
         readingTime: '10 min',
-        youtubeUrl: <iframe width="383" height="191"
+        youtubeUrl: <iframe className='pt-3'
             src="https://www.youtube.com/embed/sjWAdWMPcPM?rel=0&autoplay=1">
         </iframe>,
         icons: [
@@ -87,23 +86,23 @@ const posts = [
     },
 ]
 
-let Portfolio = () => {
+let Research = () => {
     return (
         <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
             <div className="absolute inset-0">
                 <div className="bg-white h-1/3 sm:h-2/3" />
             </div>
             <div className="relative max-w-7xl mx-auto">
-                <div className="text-center">
+                <div className="text-left">
                     <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">UI/UX Research</h2>
-                    <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                    <p className="mt-3 max-w-3xl text-xl text-gray-500 sm:mt-4">
                         I have interests in usability and exploring the cross-generational effects of the web.
                     </p>
                 </div>
                 <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                     {posts.map((post) => (
                         <div key={post.title} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                            <div className="flex-shrink-0">
+                            <div className={classNames('flex-shrink-0', post?.youtubeUrl && 'flex justify-center h-1/3 w-full')}>
                                 {post?.imageUrl ?
                                     (<img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />) :
                                     post?.youtubeUrl}
@@ -149,4 +148,4 @@ let Portfolio = () => {
     )
 }
 
-export default Portfolio;
+export default Research;

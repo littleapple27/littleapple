@@ -1,38 +1,206 @@
 import aloftBlog from "../../images/aloftBlog.png";
 import cq from "../../images/cq.png";
-//TODO Add alt text to images - all
+import psc from "../../images/psc.png";
+import pscblog from "../../images/pscblog.png";
+import meancms from "../../images/meancms.png";
+import ZipTask from "../../images/zipTask.png";
+import Icon from "../../components/icon";
 
-const people = [
+
+
+///////////////////////////////////
+//TODO Add alt text to images - all
+//update links to all projects
+
+const projects = [
     {
         name: 'Progressive Web Application',
         role: 'goAloft: A Resource for Sailors',
+        desc: 'Developed PWA responsively using modern web development capabilities to deliver an app-like user experience, based on Google\'s PWA training resources.',
         imageUrl: aloftBlog,
-        twitterUrl: '#',
-        linkedinUrl: '#',
+        icons: [
+            {
+                icon: 'html5',
+                brand: true
+            },
+            {
+                icon: 'css3',
+                brand: true,
+            },
+            {
+                icon: 'sass',
+                brand: true,
+            },
+            {
+                icon: 'bootstrap',
+                brand: true,
+            },
+            {
+                icon: 'js-square',
+                brand: true,
+            }
+        ]
     },
-    /* {
-        name: 'MEAN Blog-CMS',
-        role: '',
-        imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-    }, */
+    {
+        name: 'MEAN / Angular / MongoDB',
+        role: 'WYSIWYG Blog',
+        imageUrl: meancms,
+        desc: 'I am working to update my portfolio.  I need to compile my angular code and upload to my server.  In the meantime, feel free to view my pdf presentation.',
+        icons: [
+            {
+                icon: 'html5',
+                brand: true
+            },
+            {
+                icon: 'css3',
+                brand: true,
+            },
+            {
+                icon: 'sass',
+                brand: true,
+            },
+            {
+                icon: 'bootstrap',
+                brand: true,
+            },
+            {
+                icon: 'js-square',
+                brand: true,
+            },
+            {
+                icon: 'angular',
+                brand: true,
+            },
+            {
+                icon: 'node-js',
+                brand: true,
+            }
+        ]
+
+    },
     {
         name: 'Small Business Website',
         role: 'CQ Electrical',
+        desc: 'I was given the opportunity to build this website from the ground up, to include design, image selection, and content writing.  Completed midway through graduate program.',
         imageUrl: cq,
-        twitterUrl: '#',
-        linkedinUrl: '#',
+        icons: [
+            {
+                icon: 'html5',
+                brand: true
+            },
+            {
+                icon: 'css3',
+                brand: true,
+            },
+            {
+                icon: 'sass',
+                brand: true,
+            },
+            {
+                icon: 'bootstrap',
+                brand: true,
+            },
+            {
+                icon: 'js-square',
+                brand: true,
+            },
+            {
+                icon: 'php',
+                brand: true,
+            },
+            ,
+            {
+                icon: 'database'
+            }
+        ]
     },
-    /* {
+    {
         name: 'Android / Java',
-        role: 'ZipTask',
-        imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        twitterUrl: '#',
-        linkedinUrl: '#',
-    }, */
+        role: 'zipTask',
+        imageUrl: ZipTask,
+        desc: 'What to say about this project, but "wow, what a ride!\" I will be uploading my code to GitHub.  Stay tuned for video presentation upload to capture a peek of the final product!',
+        icons: [
+
+            {
+                icon: 'android',
+                brand: true,
+            },
+            {
+                icon: 'java',
+                brand: true,
+            },
+            {
+                icon: 'database'
+            }
+        ]
+    },
+    {
+        name: 'Responsive Web Development',
+        role: 'Portland Schooner Company',
+        desc: 'Assignment was to select an existing website and develop it responsively.',
+        imageUrl: psc,
+        icons: [
+            {
+                icon: 'html5',
+                brand: true
+            },
+            {
+                icon: 'css3',
+                brand: true,
+            },
+            {
+                icon: 'sass',
+                brand: true,
+            },
+            {
+                icon: 'bootstrap',
+                brand: true,
+            },
+            {
+                icon: 'js-square',
+                brand: true,
+            }
+        ],
+        // twitterUrl: 'https://littleapple27.github.io/psc/',
+        // linkedinUrl: '#',
+    },
+    {
+        name: 'LAMP / CRUD / PHP / mySQL',
+        role: 'Content Management System',
+        desc: 'Create, read, update, delete functionality with admin/user login screen and search capabilities.  Able to create user profiles and set admin flag.',
+        imageUrl: pscblog,
+        icons: [
+            {
+                icon: 'html5',
+                brand: true
+            },
+            {
+                icon: 'css3',
+                brand: true,
+            },
+            {
+                icon: 'sass',
+                brand: true,
+            },
+            {
+                icon: 'bootstrap',
+                brand: true,
+            },
+            {
+                icon: 'js-square',
+                brand: true,
+            },
+            {
+                icon: 'php',
+                brand: true,
+            },
+            {
+                icon: 'database'
+            },
+        ],
+        // twitterUrl: 'https://littleapple27.github.io/psc/',
+        // linkedinUrl: '#',
+    },
     // More people...
 ]
 
@@ -42,49 +210,35 @@ let Projects = () => {
             <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
                 <div className="space-y-12">
                     <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-                        <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Other Projects</h2>
+                        <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">Other projects</h2>
                         <p className="text-xl text-gray-500">
-                            A sampling of projects from over the years...
+                            A sampling of my work from over the years...
                         </p>
                     </div>
                     <ul
                         role="list"
                         className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
                     >
-                        {people.map((person) => (
-                            <li key={person.name}>
+                        {projects.map((project) => (
+                            <li key={project?.name}>
                                 <div className="space-y-4">
                                     <div className="aspect-w-3 aspect-h-2 h-75 w-75">
-                                        <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" />
+                                        <img className="object-cover shadow-lg rounded-lg" src={project?.imageUrl} alt="" />
                                     </div>
 
-                                    <div className="space-y-2">
-                                        <div className="text-lg leading-6 font-medium space-y-1">
-                                            <h3>{person.name}</h3>
-                                            <p className="text-indigo-600">{person.role}</p>
+                                    <div className="space-y-4">
+                                        <div className="leading-6 font-medium space-y-1">
+                                            <h3 className="uppercase text-sm text-indigo-700">{project?.name}</h3>
+                                            <p className="text-xl font-semibold text-gray-900 mb-3">{project?.role}</p>
                                         </div>
-                                        <ul role="list" className="flex space-x-5">
-                                            <li>
-                                                <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
-                                                    <span className="sr-only">Twitter</span>
-                                                    <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
-                                                    <span className="sr-only">LinkedIn</span>
-                                                    <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                                                        <path
-                                                            fillRule="evenodd"
-                                                            d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                                                            clipRule="evenodd"
-                                                        />
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        <div className="text-md font-light space-y-3">
+                                            <p className="text-gray-600">{project?.desc}</p>
+                                        </div>
+                                        <div className="flex mt-15">
+                                            {project?.icons?.map((icon) => (
+                                                <Icon key={icon?.icon} size={'lg'} {...icon} classNames={'text-indigo-500'} />
+                                            ))}
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -92,7 +246,7 @@ let Projects = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
