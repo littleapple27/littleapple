@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/littleapple/static/css/main.5cd48db0.chunk.css",
-    "main.js": "/littleapple/static/js/main.58d9cca5.chunk.js",
-    "main.js.map": "/littleapple/static/js/main.58d9cca5.chunk.js.map",
+    "main.css": "/littleapple/static/css/main.32bfe262.chunk.css",
+    "main.js": "/littleapple/static/js/main.0bd3c628.chunk.js",
+    "main.js.map": "/littleapple/static/js/main.0bd3c628.chunk.js.map",
     "runtime-main.js": "/littleapple/static/js/runtime-main.8591f1fa.js",
     "runtime-main.js.map": "/littleapple/static/js/runtime-main.8591f1fa.js.map",
     "static/js/2.aaa57606.chunk.js": "/littleapple/static/js/2.aaa57606.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.fdf3e0c0.chunk.js": "/littleapple/static/js/3.fdf3e0c0.chunk.js",
     "static/js/3.fdf3e0c0.chunk.js.map": "/littleapple/static/js/3.fdf3e0c0.chunk.js.map",
     "index.html": "/littleapple/index.html",
-    "static/css/main.5cd48db0.chunk.css.map": "/littleapple/static/css/main.5cd48db0.chunk.css.map",
+    "static/css/main.32bfe262.chunk.css.map": "/littleapple/static/css/main.32bfe262.chunk.css.map",
     "static/js/2.aaa57606.chunk.js.LICENSE.txt": "/littleapple/static/js/2.aaa57606.chunk.js.LICENSE.txt",
     "static/media/aloftBlog.a7e1cf34.png": "/littleapple/static/media/aloftBlog.a7e1cf34.png",
     "static/media/contactImage.829f65c7.jpg": "/littleapple/static/media/contactImage.829f65c7.jpg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.8591f1fa.js",
     "static/js/2.aaa57606.chunk.js",
-    "static/css/main.5cd48db0.chunk.css",
-    "static/js/main.58d9cca5.chunk.js"
+    "static/css/main.32bfe262.chunk.css",
+    "static/js/main.0bd3c628.chunk.js"
   ]
 }
