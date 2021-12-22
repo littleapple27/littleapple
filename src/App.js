@@ -4,6 +4,7 @@ import BannerTop from './sections/bannerTop/bannerTop.js';
 import SocialMedia from './sections/socialMedia/socialMedia.js';
 import Hero from './sections/hero/hero.js'
 import Portfolio from './sections/portfolio/portfolio.js';
+import Projects from './sections/portfolio/projects.js';
 import TechCloud from './sections/techCloud/techCloud.js';
 import ContactMe from './sections/contactMe/contactMe.js';
 import Footer from './sections/footer/footer.js';
@@ -19,6 +20,7 @@ let App = () => {
       <Hero />
       <TechCloud />
       <Portfolio />
+      <Projects />
       <SocialMedia />
       <ContactMe />
       <Footer />
