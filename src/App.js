@@ -10,6 +10,7 @@ import ContactMe from './sections/contactMe/contactMe.js';
 import Footer from './sections/footer/footer.js';
 import ScrollToTop from '@qwp/react-scroll-up';
 import pointing from './images/pointing.png';
+import TailwindCTA from './sections/cta/tailwindCTA.js';
 
 
 
@@ -19,6 +20,7 @@ let App = () => {
       <BannerTop />
       <Hero />
       <TechCloud />
+      <TailwindCTA />
       <Research />
       <Projects />
       <SocialMedia />

@@ -1004,6 +1004,9 @@ video {
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
+.pr-16 {
+	padding-right: 4rem;
+}
 .pb-8 {
 	padding-bottom: 2rem;
 }
@@ -1425,6 +1428,11 @@ video {
 	.sm\:py-24 {
 		padding-top: 6rem;
 		padding-bottom: 6rem;
+	}
+
+	.sm\:px-16 {
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
 
 	.sm\:px-8 {
