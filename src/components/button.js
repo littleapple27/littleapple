@@ -9,7 +9,6 @@ let Button = (props) => {
         C = 'a'
     }
 
-    console.log(color)
     return (
         <C
             href={linkTo}

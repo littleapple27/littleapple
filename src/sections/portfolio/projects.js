@@ -5,6 +5,7 @@ import pscblog from "../../images/pscblog.png";
 import meancms from "../../images/meancms.png";
 import ZipTask from "../../images/zipTask.png";
 import Icon from "../../components/icon";
+import meanBlogPresentation from "../../files/meanBlogPresentation.pdf"
 
 
 
@@ -18,6 +19,9 @@ const projects = [
         role: 'goAloft: A Resource for Sailors',
         desc: 'Developed PWA responsively using modern web development capabilities to deliver an app-like user experience, based on Google\'s PWA training resources.',
         imageUrl: aloftBlog,
+        linkTo: 'https://littleapple27.github.io/aloft/',
+        target: '_blank',
+        altText: 'Image of PWA responsively using modern web development.',
         icons: [
             {
                 icon: 'html5',
@@ -44,8 +48,11 @@ const projects = [
     {
         name: 'MEAN / Angular / MongoDB',
         role: 'WYSIWYG Blog',
-        imageUrl: meancms,
         desc: 'I am working to update my portfolio.  I need to compile my angular code and upload to my server.  In the meantime, feel free to view my pdf presentation.',
+        imageUrl: meancms,
+        linkTo: meanBlogPresentation,
+        target: '_blank',
+        altText: 'Image of MEAN blog presentation.',
         icons: [
             {
                 icon: 'html5',
@@ -83,6 +90,9 @@ const projects = [
         role: 'CQ Electrical',
         desc: 'I was given the opportunity to build this website from the ground up, to include design, image selection, and content writing.  Completed midway through graduate program.',
         imageUrl: cq,
+        linkTo: 'http://www.cqelectrical.com',
+        target: '_blank',
+        altText: 'Image of CQ Electrical website development project using PHP',
         icons: [
             {
                 icon: 'html5',
@@ -117,8 +127,12 @@ const projects = [
     {
         name: 'Android / Java',
         role: 'zipTask',
+        desc: 'This project created the foundation for my success working with component based development.  Project was completed using Android Studio with Java, mySQLite, and XML.  Presentation video uploaded for review and code available at GitHub.',
         imageUrl: ZipTask,
-        desc: 'What to say about this project, but "wow, what a ride!\" I will be uploading my code to GitHub.  Stay tuned for video presentation upload to capture a peek of the final product!',
+        linkTo: 'https://www.youtube.com/embed/X3YLjjDZJrg?rel=0&autoplay=1',
+        dataRel: 'lightcase',
+        target: '_blank',
+        alt: 'Image of ZipTask, Android mobile application project.',
         icons: [
 
             {
@@ -139,6 +153,9 @@ const projects = [
         role: 'Portland Schooner Company',
         desc: 'Assignment was to select an existing website and develop it responsively.',
         imageUrl: psc,
+        linkTo: 'https://littleapple27.github.io/psc/',
+        target: '_blank',
+        altText: 'Image of PSC responsive web development project',
         icons: [
             {
                 icon: 'html5',
@@ -169,6 +186,9 @@ const projects = [
         role: 'Content Management System',
         desc: 'Create, read, update, delete functionality with admin/user login screen and search capabilities.  Able to create user profiles and set admin flag.',
         imageUrl: pscblog,
+        linkTo: 'https://littleapple27.dev/pscblog/adminlogin.php',
+        target: '_blank',
+        altText: 'Image of content management system created with LAMP stack technologies.',
         icons: [
             {
                 icon: 'html5',
@@ -223,7 +243,9 @@ let Projects = () => {
                             <li key={project?.name}>
                                 <div className="space-y-4">
                                     <div className="aspect-w-3 aspect-h-2 h-75 w-75">
-                                        <img className="object-cover shadow-lg rounded-lg" src={project?.imageUrl} alt="" />
+                                        <a href={project?.linkTo} target={project?.target} data-rel={project?.dataRel}>
+                                            <img className="object-cover shadow-lg rounded-lg" src={project?.imageUrl} alt={project?.altText} />
+                                        </a>
                                     </div>
 
                                     <div className="space-y-4">
@@ -234,10 +256,16 @@ let Projects = () => {
                                         <div className="text-md font-light space-y-3">
                                             <p className="text-gray-600">{project?.desc}</p>
                                         </div>
-                                        <div className="flex mt-15">
-                                            {project?.icons?.map((icon) => (
-                                                <Icon key={icon?.icon} size={'lg'} {...icon} classNames={'text-indigo-500'} />
-                                            ))}
+                                        <div className="flex mt-15 justify-between items-center">
+                                            <div className="flex">
+                                                {project?.icons?.map((icon) => (
+                                                    <Icon key={icon?.icon} size={'lg'} {...icon} classNames={'text-indigo-500'} />
+                                                ))}
+                                            </div>
+                                            <div className="flex">
+                                                <Icon size={'lg'} icon={'github'} brand={true} classNames={'text-indigo-500'} />
+                                                <Icon size={'lg'} icon={'external-link-alt'} classNames={'text-indigo-500'} />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
