@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/littleapple/static/css/main.32bfe262.chunk.css",
-    "main.js": "/littleapple/static/js/main.0bd3c628.chunk.js",
-    "main.js.map": "/littleapple/static/js/main.0bd3c628.chunk.js.map",
+    "main.js": "/littleapple/static/js/main.109cdf0c.chunk.js",
+    "main.js.map": "/littleapple/static/js/main.109cdf0c.chunk.js.map",
     "runtime-main.js": "/littleapple/static/js/runtime-main.8591f1fa.js",
     "runtime-main.js.map": "/littleapple/static/js/runtime-main.8591f1fa.js.map",
     "static/js/2.aaa57606.chunk.js": "/littleapple/static/js/2.aaa57606.chunk.js",
@@ -19,6 +19,7 @@
     "static/media/heroImage.41d84077.jpg": "/littleapple/static/media/heroImage.41d84077.jpg",
     "static/media/iconMatchBlog.de284512.png": "/littleapple/static/media/iconMatchBlog.de284512.png",
     "static/media/littleappleavatar.89c80d7c.png": "/littleapple/static/media/littleappleavatar.89c80d7c.png",
+    "static/media/meanBlogPresentation.a68fd746.pdf": "/littleapple/static/media/meanBlogPresentation.a68fd746.pdf",
     "static/media/meancms.9b852a91.png": "/littleapple/static/media/meancms.9b852a91.png",
     "static/media/pointing.8c157239.png": "/littleapple/static/media/pointing.8c157239.png",
     "static/media/psc.2b46dab7.png": "/littleapple/static/media/psc.2b46dab7.png",
@@ -30,6 +31,6 @@
     "static/js/runtime-main.8591f1fa.js",
     "static/js/2.aaa57606.chunk.js",
     "static/css/main.32bfe262.chunk.css",
-    "static/js/main.0bd3c628.chunk.js"
+    "static/js/main.109cdf0c.chunk.js"
   ]
 }
