@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/littleapple/static/css/main.d5a8c5e4.chunk.css",
-    "main.js": "/littleapple/static/js/main.80006f44.chunk.js",
-    "main.js.map": "/littleapple/static/js/main.80006f44.chunk.js.map",
+    "main.js": "/littleapple/static/js/main.7a91fc08.chunk.js",
+    "main.js.map": "/littleapple/static/js/main.7a91fc08.chunk.js.map",
     "runtime-main.js": "/littleapple/static/js/runtime-main.de79773f.js",
     "runtime-main.js.map": "/littleapple/static/js/runtime-main.de79773f.js.map",
     "static/js/2.2145ca33.chunk.js": "/littleapple/static/js/2.2145ca33.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.de79773f.js",
     "static/js/2.2145ca33.chunk.js",
     "static/css/main.d5a8c5e4.chunk.css",
-    "static/js/main.80006f44.chunk.js"
+    "static/js/main.7a91fc08.chunk.js"
   ]
 }
