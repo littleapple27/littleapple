@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/littleapple/static/css/main.32bfe262.chunk.css",
-    "main.js": "/littleapple/static/js/main.109cdf0c.chunk.js",
-    "main.js.map": "/littleapple/static/js/main.109cdf0c.chunk.js.map",
-    "runtime-main.js": "/littleapple/static/js/runtime-main.8591f1fa.js",
-    "runtime-main.js.map": "/littleapple/static/js/runtime-main.8591f1fa.js.map",
-    "static/js/2.aaa57606.chunk.js": "/littleapple/static/js/2.aaa57606.chunk.js",
-    "static/js/2.aaa57606.chunk.js.map": "/littleapple/static/js/2.aaa57606.chunk.js.map",
-    "static/js/3.fdf3e0c0.chunk.js": "/littleapple/static/js/3.fdf3e0c0.chunk.js",
-    "static/js/3.fdf3e0c0.chunk.js.map": "/littleapple/static/js/3.fdf3e0c0.chunk.js.map",
+    "main.css": "/littleapple/static/css/main.d5a8c5e4.chunk.css",
+    "main.js": "/littleapple/static/js/main.80006f44.chunk.js",
+    "main.js.map": "/littleapple/static/js/main.80006f44.chunk.js.map",
+    "runtime-main.js": "/littleapple/static/js/runtime-main.de79773f.js",
+    "runtime-main.js.map": "/littleapple/static/js/runtime-main.de79773f.js.map",
+    "static/js/2.2145ca33.chunk.js": "/littleapple/static/js/2.2145ca33.chunk.js",
+    "static/js/2.2145ca33.chunk.js.map": "/littleapple/static/js/2.2145ca33.chunk.js.map",
+    "static/js/3.ca0fee07.chunk.js": "/littleapple/static/js/3.ca0fee07.chunk.js",
+    "static/js/3.ca0fee07.chunk.js.map": "/littleapple/static/js/3.ca0fee07.chunk.js.map",
     "index.html": "/littleapple/index.html",
-    "static/css/main.32bfe262.chunk.css.map": "/littleapple/static/css/main.32bfe262.chunk.css.map",
-    "static/js/2.aaa57606.chunk.js.LICENSE.txt": "/littleapple/static/js/2.aaa57606.chunk.js.LICENSE.txt",
+    "static/css/main.d5a8c5e4.chunk.css.map": "/littleapple/static/css/main.d5a8c5e4.chunk.css.map",
+    "static/js/2.2145ca33.chunk.js.LICENSE.txt": "/littleapple/static/js/2.2145ca33.chunk.js.LICENSE.txt",
     "static/media/aloftBlog.a7e1cf34.png": "/littleapple/static/media/aloftBlog.a7e1cf34.png",
-    "static/media/contactImage.829f65c7.jpg": "/littleapple/static/media/contactImage.829f65c7.jpg",
     "static/media/cq.c236f671.png": "/littleapple/static/media/cq.c236f671.png",
     "static/media/flatIconsBlog.6c20d749.png": "/littleapple/static/media/flatIconsBlog.6c20d749.png",
     "static/media/heroImage.41d84077.jpg": "/littleapple/static/media/heroImage.41d84077.jpg",
@@ -28,9 +27,9 @@
     "static/media/zipTask.558dfba4.png": "/littleapple/static/media/zipTask.558dfba4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8591f1fa.js",
-    "static/js/2.aaa57606.chunk.js",
-    "static/css/main.32bfe262.chunk.css",
-    "static/js/main.109cdf0c.chunk.js"
+    "static/js/runtime-main.de79773f.js",
+    "static/js/2.2145ca33.chunk.js",
+    "static/css/main.d5a8c5e4.chunk.css",
+    "static/js/main.80006f44.chunk.js"
   ]
 }
